@@ -1,5 +1,10 @@
 # CakePHP-ArangoDb
-ArangoDB Model for CakePHP
+ArangoDB Model for CakePHP 3.x
+
+Requierments:
+--------
+* PHP 5.4.16 or greater.
+* CakePHP >= 3.0
 
 Installation:
 --------
