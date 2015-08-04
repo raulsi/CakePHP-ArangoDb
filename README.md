@@ -39,8 +39,32 @@ or
 ```
 
 
+To use the Default AuthComponent:
+-------------------
+Copy the UserModel.php into the Model Folder and edit the BaseAuthenticate in 
+<app_dir>/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php
+
+
+```PHP
+.......
+use App\model\UserModel;
+abstract class BaseAuthenticate implements EventListenerInterface
+{
+..........
+  protected function _query($username)
+    {
+        $config = $this->_config;
+        $doc=new UserModel();
+        $query=$doc->findUser($username);
+        
+        return $query;
+    }
+..........
+}
+```
 
 
 
 Thank You <br>
 Rahul Singh
+
