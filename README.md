@@ -70,6 +70,5 @@ abstract class BaseAuthenticate implements EventListenerInterface
 
 
 
-Thank You <br>
-Rahul Singh
+Check the full doc <a href="http://raulsi.in/blog/2015/09/08/arangodb-model-for-cakephp-3-x/">here</a>
 
